@@ -688,7 +688,7 @@ const CheckoutComponent = () => {
                                         as="span"
                                         className="mt-6 text-sm font-medium text-gray-900"
                                       >
-                                        ₵{deliveryMethod.price}
+                                        ${deliveryMethod.price}
                                       </RadioGroup.Description>
                                     </span>
                                   </span>
@@ -746,7 +746,7 @@ const CheckoutComponent = () => {
 
                             <div className="flex-1 pt-2 flex items-end justify-between">
                               <p className="mt-1 text-sm font-medium text-gray-900">
-                                ₵{product.price}
+                                ${product.price}
                               </p>
 
                               <div className="ml-4">
@@ -765,25 +765,25 @@ const CheckoutComponent = () => {
                         <div className="flex items-center justify-between">
                           <dt className="text-sm">Subtotal</dt>
                           <dd className="text-sm font-medium text-gray-900">
-                            ₵{totalPrice.toFixed(2)}
+                            ${totalPrice.toFixed(2)}
                           </dd>
                         </div>
                         <div className="flex items-center justify-between">
                           <dt className="text-sm">Delivery</dt>
                           <dd className="text-sm font-medium text-gray-900">
-                            ₵{deliveryPrice.toFixed(2)}
+                            ${deliveryPrice.toFixed(2)}
                           </dd>
                         </div>
                         <div className="flex items-center justify-between">
                           <dt className="text-sm">Taxes</dt>
                           <dd className="text-sm font-medium text-gray-900">
-                            ₵{(0.0195 * totalPrice).toFixed(2)}
+                            ${(0.0195 * totalPrice).toFixed(2)}
                           </dd>
                         </div>
                         <div className="flex items-center justify-between border-t border-gray-200 pt-6">
                           <dt className="text-base font-medium">Total</dt>
                           <dd className="text-base font-medium text-gray-900">
-                            ₵{finalPrice.toFixed(2)}
+                            ${finalPrice.toFixed(2)}
                           </dd>
                         </div>
                       </dl>

@@ -17,7 +17,7 @@ const Product = (data: ProductsType) => {
           {data.products.map((product, i: number) => (
             <MetaComponent
               key={i}
-              title={`${product.title} - ₵${product.amount} | ${BRAND_NAME}`}
+              title={`${product.title} - $${product.amount} | ${BRAND_NAME}`}
               image={`https://res.cloudinary.com/deyudesls/image/upload/${product.img}`}
               description={product.description}
             />

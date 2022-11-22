@@ -29,7 +29,7 @@ const TrendingProducts: NextPage = () => {
                       />
                       <div className="flex items-end p-4" aria-hidden="true">
                         <div className="w-full bg-white bg-opacity-75 backdrop-filter backdrop-blur py-2 px-4 rounded-md text-sm font-medium text-gray-900 text-center">
-                          {product.title} &middot; {`₵${product.amount}`}
+                          {product.title} &middot; {`$${product.amount}`}
                         </div>
                       </div>
                     </div>

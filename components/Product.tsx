@@ -48,7 +48,7 @@ const ProductComponent = (data: ProductsType) => {
 
                   <div className="flex items-center">
                     <p className="text-lg text-gray-900 sm:text-xl">
-                      ₵{product.amount}
+                      ${product.amount}
                     </p>
                   </div>
 

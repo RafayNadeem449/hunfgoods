@@ -88,12 +88,12 @@ const AccountComponent = (email: any) => {
                                 className="mx-1 text-gray-400"
                                 aria-hidden="true"
                               >
-                                Qunatity &middot;
+                                Quantity &middot;
                               </span>{" "}
                               <span>{product.quantity}</span>
                             </p>
                             <p className="mt-1 font-medium text-gray-900">
-                              ₵{product.price}
+                              ${product.price}
                             </p>
                           </div>
                         </div>

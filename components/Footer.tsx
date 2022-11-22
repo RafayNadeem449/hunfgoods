@@ -121,7 +121,7 @@ const FooterComponent: NextPage = () => {
                   className="flex items-center text-gray-500 hover:text-gray-600"
                 >
                   <FlagImageComponent />
-                  <span className="ml-3 text-sm">GHANA</span>
+                  {/* <span className="ml-3 text-sm">GHANA</span> */}
                   <span className="sr-only">location and currency</span>
                 </a>
               </div>

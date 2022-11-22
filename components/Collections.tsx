@@ -23,7 +23,7 @@ const CollectionsComponent = (data: ProductsType) => {
                   </div>
                   <div className="mt-4 flex items-center justify-between text-base font-medium text-gray-900">
                     <h3>{product.title}</h3>
-                    <p>₵{product.amount}</p>
+                    <p>${product.amount}</p>
                   </div>
                   <p className="mt-1 text-sm italic text-gray-500">
                     {product.availability}
