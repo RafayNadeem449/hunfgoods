@@ -1,4 +1,4 @@
-New installment of the [FlowersGhana](https://flowersghana.com) website.
+
 
 ## Technologies
 
