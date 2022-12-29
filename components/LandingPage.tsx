@@ -1,5 +1,7 @@
 import { NextPage } from "next";
 import { BRAND_BUTTON_TEXT, BRAND_DESCRIPTION, BRAND_TAGLINE } from "../lib";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import SliderSection from '../components/SliderSection'
 import {
   HeroImageComponent,
   CollectionsImageComponent,
@@ -20,9 +22,9 @@ const LandingPageComponent: NextPage = () => {
         <main>
           {/* Hero */}
           <div className="flex flex-col border-b border-gray-200 lg:border-0">
-            <ActionComponent />
-
-            <div className="relative">
+            {/* <ActionComponent /> */}
+           </div>
+            {/* <div className="relative">
               <div
                 aria-hidden="true"
                 className="hidden absolute w-1/2 h-full bg-gray-100 lg:block"
@@ -50,11 +52,14 @@ const LandingPageComponent: NextPage = () => {
                   </div>
                 </div>
               </div>
-              <div className="w-full h-48 sm:h-64 lg:absolute lg:top-0 lg:right-0 lg:w-1/2 lg:h-full">
+              <div >
                 <HeroImageComponent />
+                </div>
+                </div>
+              </div> */}
+              <div>
+              <SliderSection/>
               </div>
-            </div>
-          </div>
 
           {/* Trending products */}
           <section aria-labelledby="trending-heading" className="bg-white">
