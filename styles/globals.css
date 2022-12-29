@@ -28,6 +28,11 @@
   animation: spinner 1.5s linear infinite;
 }
 
+.txtcent
+{
+  text-align: center;
+}
+
 @-webkit-keyframes spinner {
   0% {
     -webkit-transform: rotate(0deg);
@@ -45,3 +50,4 @@
     transform: rotate(360deg);
   }
 }
+

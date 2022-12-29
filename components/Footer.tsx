@@ -20,27 +20,27 @@ const FooterComponent: NextPage = () => {
                 <div className="grid grid-cols-2 gap-8 xl:col-span-2">
                   <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                      <h3 className="text-sm font-medium text-gray-900">
+                      <h3 className="text-sm font-medium text-gray-900 txtcent">
                         Socials
                       </h3>
-                      <ul role="list" className="mt-6 space-y-6">
+                      <ul role="list" className="mt-6 space-y-6 txtcent">
                         {footerNavigation.social.map((item) => (
                           <li key={item.name} className="text-sm">
-                            <Link
+                            <a
                               href={item.href}
                               className="text-gray-500 hover:text-gray-600"
                             >
                               {item.name}
-                            </Link>
+                            </a>
                           </li>
                         ))}
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-medium text-gray-900">
+                      <h3 className="text-sm font-medium text-gray-900 txtcent">
                         Customer Service
                       </h3>
-                      <ul role="list" className="mt-6 space-y-6">
+                      <ul role="list" className="mt-6 space-y-6 txtcent">
                         {footerNavigation.customerService.map((item) => (
                           <li key={item.name} className="text-sm">
                             <a
@@ -56,10 +56,10 @@ const FooterComponent: NextPage = () => {
                   </div>
                   <div className="space-y-12 md:space-y-0 md:grid md:grid-cols-2 md:gap-8">
                     <div>
-                      <h3 className="text-sm font-medium text-gray-900">
+                      <h3 className="text-sm font-medium text-gray-900 txtcent">
                         Company
                       </h3>
-                      <ul role="list" className="mt-6 space-y-6">
+                      <ul role="list" className="mt-6 space-y-6 txtcent">
                         {footerNavigation.company.map((item) => (
                           <li key={item.name} className="text-sm">
                             <a
@@ -73,10 +73,10 @@ const FooterComponent: NextPage = () => {
                       </ul>
                     </div>
                     <div>
-                      <h3 className="text-sm font-medium text-gray-900">
+                      <h3 className="text-sm font-medium text-gray-900 txtcent">
                         Legal
                       </h3>
-                      <ul role="list" className="mt-6 space-y-6">
+                      <ul role="list" className="mt-6 space-y-6 txtcent">
                         {footerNavigation.legal.map((item) => (
                           <li key={item.name} className="text-sm">
                             <a
