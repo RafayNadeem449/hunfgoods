@@ -879,10 +879,10 @@ const CheckoutComponent = () => {
                         Order created successfully
                       </Dialog.Title>
                       <div className="mt-2">
-                        <p className="text-sm text-gray-500">
+                        {/* <p className="text-sm text-gray-500">
                           Please allow the page to reload after you make
                           payment.
-                        </p>
+                        </p> */}
                       </div>
                     </div>
                   </div>
