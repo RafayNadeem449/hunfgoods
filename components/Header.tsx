@@ -245,12 +245,12 @@ const HeaderComponent: NextPage = () => {
         </Dialog>
       </Transition.Root>
       <header className="relative z-10">
-        <nav aria-label="Top">
+        <nav aria-label="Top" className="balanceHeader">
           {/* Top navigation */}
-          <div className="bg-red-800">
-            <div className="max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8">
+          {/* <div className="bg-red-800"> */}
+            {/* <div className="max-w-7xl mx-auto h-10 px-4 flex items-center justify-between sm:px-6 lg:px-8"> */}
               {/* Currency selector */}
-              <form className="hidden lg:block lg:flex-1">
+              {/* <form className="hidden lg:block lg:flex-1">
                 <div className="flex">
                   <label htmlFor="desktop-currency" className="sr-only">
                     Currency
@@ -284,11 +284,11 @@ const HeaderComponent: NextPage = () => {
                     </div>
                   </div>
                 </div>
-              </form>
+              </form> */}
 
               <Banner />
 
-              <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+              {/* <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
                 {session && session?.user?.email ? (
                   <>
                     <Link href={"/account"}>
@@ -320,9 +320,9 @@ const HeaderComponent: NextPage = () => {
                     </span>
                   </>
                 )}
-              </div>
-            </div>
-          </div>
+              </div> */}
+            {/* </div> */}
+          {/* </div> */}
 
           {/* Secondary navigation */}
           <div className="bg-white">
@@ -334,7 +334,8 @@ const HeaderComponent: NextPage = () => {
                     <Link href="/">
                       <div style={{ cursor: "pointer" }}>
                         <span className="sr-only">{BRAND_NAME}</span>
-                        <LogoComponent height={50} width={100} />
+                            <b>TX-GOODS</b>
+                        {/* <LogoComponent height={50} width={100} /> */}
                       </div>
                     </Link>
                   </div>
@@ -484,7 +485,8 @@ const HeaderComponent: NextPage = () => {
                   <Link href="/">
                     <div className="lg:hidden" style={{ cursor: "pointer" }}>
                       <span className="sr-only">{BRAND_NAME}</span>
-                      <LogoComponent height={50} width={100} />
+                      {/* <LogoComponent height={50} width={100} /> */}
+                      <b>TX-GOODS</b>
                     </div>
                   </Link>
 

@@ -1,16 +1,23 @@
 import { CollectionsType, FooterType } from "./types";
 
-export const BRAND_NAME: string = "Flowers Ghana";
+export const BRAND_NAME: string = "TX-GOODS";
 
-export const BRAND_TAGLINE: string =
-  "Send flowers to Ghana - Florist in Accra ";
+// export const BRAND_TAGLINE: string =
+//   "Send flowers to Ghana - Florist in Accra ";
+  export const BRAND_TAGLINE: string =
+  "TX-GOODS | All in One Platform";
 
 export const BRAND_DESCRIPTION: string =
   "Florist in Ghana - FlowerGhana delivers hand-crafted bouquets of FRESH flowers and plants in Ghana. SAME-DAY flower delivery in Ghana. Quality. Order online. Pay online.";
 
-export const BRAND_URL: string = "https://www.flowersghana.com";
+// export const BRAND_URL: string = "https://www.flowersghana.com";
 
-export const BRAND_BUTTON_TEXT: string = "Send someone flowers";
+export const BRAND_URL: string = "https://www.txgoods.com";
+
+
+// export const BRAND_BUTTON_TEXT: string = "Send someone flowers";
+export const BRAND_BUTTON_TEXT: string = "txgoods";
+
 
 export const BRAND_IMAGE: string =
   "https://res.cloudinary.com/deyudesls/image/upload/v1626707839/flowersghanaLogo.webp";
@@ -133,18 +140,18 @@ export const collections: CollectionsType = [
 export const deliveryMethods = [
   {
     id: 1,
-    title: "Standard",
+    title: "Cash on Delivery",
     turnaround:
-      "Delivered within 4-8 hours from the time of order. Only applicable to same day deliveries.",
+      "Delivered within 4-8 Working Days from the time of order.",
     price: 0,
   },
-  {
-    id: 2,
-    title: "Express",
-    turnaround:
-      "Delivered within 2-4 hours from the time of order. We start deliveries from 9am Mon-Sat.",
-    price: 100,
-  },
+  // {
+  //   id: 2,
+  //   title: "Express",
+  //   turnaround:
+  //     "Delivered within 2-4 hours from the time of order. We start deliveries from 9am Mon-Sat.",
+  //   price: 100,
+  // },
 ];
 
 export const regionList = [
@@ -167,7 +174,7 @@ export const regionList = [
 ];
 
 export const copyText = (url: string) => {
-  navigator.clipboard.writeText(`https://www.flowersghana.com/product/${url}`);
+  navigator.clipboard.writeText(`https://www.txgoods.com/product/${url}`);
 };
 
 export const share = (data: any) => {

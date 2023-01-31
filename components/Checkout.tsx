@@ -116,7 +116,7 @@ const CheckoutComponent = () => {
 
     phone: yup
       .string()
-      .phone("GH", true, "Please provide a Ghanaian Phone Number")
+      .phone("GH", true, "Please provide a Valid Phone Number")
       .required("Phone number is required"),
 
     senderPhone: yup
@@ -217,14 +217,14 @@ const CheckoutComponent = () => {
 
   const currency: CurrencyType = "GHS";
 
-  const componentProps = {
-    email: values.email as string,
-    amount: Math.round(finalPrice * 100),
-    currency: currency,
-    publicKey,
-    text: "Proceed to payment",
-    onSuccess: () => completeCheckout(),
-  };
+  // const componentProps = {
+  //   email: values.email as string,
+  //   amount: Math.round(finalPrice * 100),
+  //   currency: currency,
+  //   publicKey,
+  //   text: "Proceed to payment",
+  //   onSuccess: () => completeCheckout(),
+  // };
 
   useEffect(() => {
     fetchCartContent();
@@ -645,7 +645,7 @@ const CheckoutComponent = () => {
                         onChange={setSelectedDeliveryMethod}
                       >
                         <RadioGroup.Label className="text-lg font-medium text-gray-900">
-                          Delivery method
+                          Payment Method
                         </RadioGroup.Label>
 
                         <div className="mt-4 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-4">
@@ -808,6 +808,8 @@ const CheckoutComponent = () => {
                               viewBox="0 0 100 101"
                               fill="none"
                               xmlns="http://www.w3.org/2000/svg"
+                              
+
                             >
                               <path
                                 d="M100 50.5908C100 78.2051 77.6142 100.591 50 100.591C22.3858 100.591 0 78.2051 0 50.5908C0 22.9766 22.3858 0.59082 50 0.59082C77.6142 0.59082 100 22.9766 100 50.5908ZM9.08144 50.5908C9.08144 73.1895 27.4013 91.5094 50 91.5094C72.5987 91.5094 90.9186 73.1895 90.9186 50.5908C90.9186 27.9921 72.5987 9.67226 50 9.67226C27.4013 9.67226 9.08144 27.9921 9.08144 50.5908Z"
@@ -831,7 +833,7 @@ const CheckoutComponent = () => {
         </div>
       ) : (
         <NotificationComponent
-          content="Your have no items in your sopping cart"
+          content="Your have no items in your shopping cart"
           color="red"
         />
       )}
@@ -885,10 +887,10 @@ const CheckoutComponent = () => {
                     </div>
                   </div>
                   <div className="mt-5 sm:mt-6">
-                    <PaystackButton
+                    {/* <PaystackButton
                       className={"paystack-button"}
                       {...componentProps}
-                    />
+                    /> */}
                   </div>
                 </Dialog.Panel>
               </Transition.Child>

@@ -51,3 +51,12 @@
   }
 }
 
+.balanceHeader
+{
+  margin-top: -2%;
+}
+
+.carousel-indicators button
+{
+  display: none;
+}
