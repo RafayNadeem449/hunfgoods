@@ -15,7 +15,7 @@ const FooterComponent: NextPage = () => {
             <div className="pt-16 pb-20">
               <div className="md:flex md:justify-center">
                 {/* <LogoComponent height={100} width={150} /> */}
-                <b>TX-GOODS</b>
+                <b>HUNF-GOODS</b>
               </div>
               <div className="mt-16 max-w-5xl mx-auto xl:grid xl:grid-cols-2 xl:gap-8">
                 <div className="grid grid-cols-2 gap-8 xl:col-span-2">

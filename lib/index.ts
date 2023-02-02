@@ -1,11 +1,11 @@
 import { CollectionsType, FooterType } from "./types";
 
-export const BRAND_NAME: string = "TX-GOODS";
+export const BRAND_NAME: string = "HUNF-GOODS";
 
 // export const BRAND_TAGLINE: string =
 //   "Send flowers to Ghana - Florist in Accra ";
   export const BRAND_TAGLINE: string =
-  "TX-GOODS | All in One Platform";
+  "HUNF-GOODS | All in One Platform";
 
 export const BRAND_DESCRIPTION: string =
   "Florist in Ghana - FlowerGhana delivers hand-crafted bouquets of FRESH flowers and plants in Ghana. SAME-DAY flower delivery in Ghana. Quality. Order online. Pay online.";

@@ -334,7 +334,7 @@ const HeaderComponent: NextPage = () => {
                     <Link href="/">
                       <div style={{ cursor: "pointer" }}>
                         <span className="sr-only">{BRAND_NAME}</span>
-                            <b>TX-GOODS</b>
+                            <b>HUNF-GOODS</b>
                         {/* <LogoComponent height={50} width={100} /> */}
                       </div>
                     </Link>
@@ -486,7 +486,7 @@ const HeaderComponent: NextPage = () => {
                     <div className="lg:hidden" style={{ cursor: "pointer" }}>
                       <span className="sr-only">{BRAND_NAME}</span>
                       {/* <LogoComponent height={50} width={100} /> */}
-                      <b>TX-GOODS</b>
+                      <b>HUNF-GOODS</b>
                     </div>
                   </Link>
 
